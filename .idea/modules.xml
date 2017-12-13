@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VeiculosFipe.iml" filepath="$PROJECT_DIR$/VeiculosFipe.iml" />
+      <module fileurl="file://C:\Users\rodol\Documents\carrosFipe\VeiculosFipe.iml" filepath="C:\Users\rodol\Documents\carrosFipe\VeiculosFipe.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carrosFipe.iml" filepath="$PROJECT_DIR$/carrosFipe.iml" />
     </modules>
   </component>
 </project>

@@ -1,14 +1,17 @@
 package com.example.votogames.veiculosfipe.models;
 
-import java.util.List;
-
 /**
- * Created by VOTOGAMES on 04/09/2017.
+ * Created by rodol on 13/12/2017.
  */
 
 public class AnoModelo {
 
-    public String id;
+    public String fipe_marca;
+    public String fipe_codigo;
     public String name;
+    public String marca;
+    public String key;
+    public String veiculo;
+    public String id;
 
 }

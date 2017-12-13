@@ -1,15 +1,15 @@
 package com.example.votogames.veiculosfipe.models;
 
-import java.util.List;
-
 /**
- * Created by VOTOGAMES on 04/09/2017.
+ * Created by rodol on 13/12/2017.
  */
 
 public class Marcas {
 
-    public int id;
     public String name;
-
+    public String fipe_name;
+    public int order;
+    public String key;
+    public int id;
 
 }

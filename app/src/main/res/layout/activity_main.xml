@@ -6,4 +6,266 @@
     android:layout_height="match_parent"
     tools:context="com.example.votogames.veiculosfipe.MainActivity">
 
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilSelecionaTipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Tipo de Veículo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edtSelecionaTipo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/arrowSelecionaTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaTipo"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaTipo"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaTipo"/>
+
+    <View
+        android:id="@+id/viewSelecionaTipo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaTipo"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaTipo"
+        app:layout_constraintStart_toStartOf="@id/tilSelecionaTipo"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaTipo"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilSelecionaMarca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="Marca"
+        app:layout_constraintTop_toBottomOf="@id/tilSelecionaTipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edtSelecionaMarca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/arrowSelecionaMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaMarca"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaMarca"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaMarca"/>
+
+    <View
+        android:id="@+id/viewSelecionaMarca"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaMarca"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaMarca"
+        app:layout_constraintStart_toStartOf="@id/tilSelecionaMarca"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaMarca"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilSelecionaModelo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Modelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSelecionaMarca">
+
+        <EditText
+            android:id="@+id/edtSelecionaModelo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/arrowSelecionaModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaModelo"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaModelo"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaModelo"/>
+
+    <View
+        android:id="@+id/viewSelecionaModelo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaModelo"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaModelo"
+        app:layout_constraintStart_toStartOf="@id/tilSelecionaModelo"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaModelo"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilSelecionaAno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Ano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSelecionaModelo">
+
+        <EditText
+            android:id="@+id/edtSelecionaAno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/arrowSelecionaAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_drop_down"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaAno"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaAno"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaAno" />
+
+    <View
+        android:id="@+id/viewSelecionaAno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@id/tilSelecionaAno"
+        app:layout_constraintEnd_toEndOf="@id/tilSelecionaAno"
+        app:layout_constraintStart_toStartOf="@id/tilSelecionaAno"
+        app:layout_constraintTop_toTopOf="@id/tilSelecionaAno" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lytValores"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilSelecionaAno">
+
+        <TextView
+            android:id="@+id/txtMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Marca: "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/valueMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/txtMarca"
+            app:layout_constraintStart_toEndOf="@id/txtMarca"
+            app:layout_constraintTop_toTopOf="@id/txtMarca"
+            tools:text="Fiat" />
+
+        <TextView
+            android:id="@+id/txtModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Modelo: "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/txtMarca"
+            app:layout_constraintTop_toBottomOf="@id/txtMarca" />
+
+        <TextView
+            android:id="@+id/valueModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/txtModelo"
+            app:layout_constraintStart_toEndOf="@id/txtModelo"
+            app:layout_constraintTop_toTopOf="@id/txtModelo"
+            tools:text="Palio 1.0 ECONOMY Fire Flex 8V 4p" />
+
+        <TextView
+            android:id="@+id/txtPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Preço: "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/txtModelo"
+            app:layout_constraintTop_toBottomOf="@id/txtModelo" />
+
+        <TextView
+            android:id="@+id/valuePreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/txtPreco"
+            app:layout_constraintStart_toEndOf="@id/txtPreco"
+            app:layout_constraintTop_toTopOf="@id/txtPreco"
+            tools:text="R$ 23.055,00" />
+
+        <TextView
+            android:id="@+id/txtCodFipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Codigo FIPE: "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/txtPreco"
+            app:layout_constraintTop_toBottomOf="@id/txtPreco" />
+
+        <TextView
+            android:id="@+id/valueCodFipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/txtCodFipe"
+            app:layout_constraintStart_toEndOf="@id/txtCodFipe"
+            app:layout_constraintTop_toTopOf="@id/txtCodFipe"
+            tools:text="001267-0" />
+
+        <TextView
+            android:id="@+id/txtCombustivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Combustível: "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/txtCodFipe"
+            app:layout_constraintTop_toBottomOf="@id/txtCodFipe" />
+
+        <TextView
+            android:id="@+id/valueCombustivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/txtCombustivel"
+            app:layout_constraintStart_toEndOf="@id/txtCombustivel"
+            app:layout_constraintTop_toTopOf="@id/txtCombustivel"
+            tools:text="Gasolina" />
+
+    </android.support.constraint.ConstraintLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -1,18 +1,15 @@
 package com.example.votogames.veiculosfipe;
 
 import com.example.votogames.veiculosfipe.models.AnoModelo;
-import com.example.votogames.veiculosfipe.models.AnoModeloCatalog;
 import com.example.votogames.veiculosfipe.models.Marcas;
-import com.example.votogames.veiculosfipe.models.MarcasCatalog;
 import com.example.votogames.veiculosfipe.models.Modelos;
-import com.example.votogames.veiculosfipe.models.ModelosCatalog;
 import com.example.votogames.veiculosfipe.models.Veiculos;
-import com.example.votogames.veiculosfipe.models.VeiculosCatalog;
 
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 /**
  * Created by VOTOGAMES on 04/09/2017.
@@ -20,26 +17,25 @@ import retrofit2.http.GET;
 
 public interface FipeService {
 
-    public static final String URL_BASE = "http://fipeapi.appspot.com/";
-    public static final String URL_BASE_CARROS = "http://fipeapi.wipsites.com.br/carros";
-    public static final String URL_BASE_MOTOS = "http://fipeapi.wipsites.com.br/motos";
-    public static final String URL_BASE_CAMINHOES = "http://fipeapi.wipsites.com.br/caminhoes";
+    public static final String URL_BASE = "http://fipeapi.appspot.com/api/1/";
 
-    @GET("marcas")
-    Call<MarcasCatalog> listMarcas();
+    @GET("{tipo}/marcas.json")
+    Call<List<Marcas>> listMarcas(@Path("tipo") String tipo);
 
-    @GET("13")
-    Call<ModelosCatalog> listModelos();
+    @GET("{tipo}/veiculos/{id}.json")
+    Call<List<Modelos>> listModelos(@Path("tipo") String tipo,
+                                    @Path("id") int id);
 
-    @GET("6418")
-    Call<AnoModeloCatalog> listAnoModelo();
+    @GET("{tipo}/veiculo/{id}/{idModelo}.json")
+    Call<List<AnoModelo>> listAnos(@Path("tipo") String tipo,
+                                   @Path("id") int id,
+                                   @Path("idModelo") int idModelo);
 
-    @GET("2013-1")
-    Call<VeiculosCatalog> listVeiculos();
-
-    @GET("api/1/carros/marcas.json")
-    Call<VeiculosCatalog> listaVeiculos();
-
+    @GET("{tipo}/veiculo/{id}/{idModelo}/{anoModelo}.json")
+    Call<Veiculos> getInfoVeiculo(@Path("tipo") String tipo,
+                                         @Path("id") int id,
+                                         @Path("idModelo") int idModelo,
+                                         @Path("anoModelo") String anoModelo);
 
 
 }
